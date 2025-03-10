@@ -8,7 +8,7 @@ const Navbar = () => {
     {/* Search Bar */}
     <div className='flex items-center gap-8'>
       <div className='relative flex h-min w-[200px]'>
-        <Search />
+        <Search className='flex item-center'/>
       </div>
     </div>
   </div>
