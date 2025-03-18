@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import React, { useState } from 'react'
 
 const Sidebar = () => {
@@ -11,11 +12,15 @@ const Sidebar = () => {
   return (
     <div className={sidebarClassNames}>
       <div className='flex h-[100%] w-full flex-col justify-start'>
+        {/* TOP LOGO */}
         <div className='z-50 flex min-h-[56px] w-64 items-center justify-between bg-white px-6 pt-3 dark:bg-black'>
           <div className='text-xl font-bold text-gray-800 dark:text-white'>
             Projexio
           </div>
         </div>
+        {/* TEAM */}
+        <div className='flex items-center gap-5 border-y-[1.5px] border-gray-200 px-8 py-4 dark:border-gray-700'></div>
+        <Image src="/logo.png" alt='Logo' width={40} height={40} />
       </div>
     </div>
   )
